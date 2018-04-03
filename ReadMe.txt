@@ -1,0 +1,1 @@
+I have just recently recieved the book "Cracking the Coding Interview" by Gayle Laakmann McDowell (6th Edition), and I have created this repository as a workspace for the interview questions I am currently working on. You are welcome to see how I solved or currently trying to find the solution to some of these questions.
