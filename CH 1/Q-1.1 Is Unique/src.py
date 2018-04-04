@@ -5,13 +5,12 @@ user_input =input("Please enter the string to see if there are only unique chars
 def unique_check(user_input):
     answer = False
     for i in range(0,len(user_input)):
-        test_char = user_input[i]
-        for j in range(0,len(user_input)):
-            other_char = user_input[j]
 
-            if other_char == test_char and i == j:
+        for j in range(0,len(user_input)):
+
+            if user_input[i] == user_input[j] and i == j:
                 continue
-            elif other_char == test_char and i != j:
+            elif user_input[i] == user_input[j] and i != j:
                 answer = False
                 return answer
             else:
