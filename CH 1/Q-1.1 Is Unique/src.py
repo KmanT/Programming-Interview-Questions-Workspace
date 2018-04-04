@@ -11,9 +11,9 @@ def unique_check(user_input):
 
             if other_char == test_char and i == j:
                 continue
-            if other_char == test_char and i != j:
+            elif other_char == test_char and i != j:
                 answer = False
-                break
+                return answer
             else:
                 answer = True
 
