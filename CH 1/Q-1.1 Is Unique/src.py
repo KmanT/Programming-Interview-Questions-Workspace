@@ -6,8 +6,12 @@ def unique_check(user_input):
     answer = False
     for i in range(0,len(user_input)):
         test_char = user_input[i]
-        for c in user_input:
-            if c == test_char:
+        for j in range(0,len(user_input)):
+            other_char = user_input[j]
+
+            if other_char == test_char and i == j:
+                continue
+            if other_char == test_char and i != j:
                 answer = False
                 break
             else:
