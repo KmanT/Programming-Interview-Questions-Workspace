@@ -3,17 +3,17 @@
 user_input =input("Please enter the string to see if there are only unique chars.\n")
 
 def unique_check(user_input):
+    answer = False
     for i in range(0,len(user_input)):
-
-        char_check1 = user_input[i]
-
-        for j in range(0,len(user_input)):
-            char_check2 = user_input[j]
-            if char_check1 == char_check2 and i != j:
-                return False
+        test_char = user_input[i]
+        for c in user_input:
+            if c == test_char:
+                answer = False
                 break
             else:
-                return True
+                answer = True
+
+    return answer
 
 is_unique = unique_check(user_input)
 
